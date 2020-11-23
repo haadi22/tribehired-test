@@ -8,7 +8,6 @@ import { MonitorComponent } from './monitor/monitor/monitor.component';
 import {MonitorModule} from './monitor/monitor.module';
 import { Task2Component } from './task2/task2.component';
 import { Task3Component } from './task3/task3.component';
-import { Task4Component } from './task4/task4.component';
 import { FormsModule } from '@angular/forms';
 
 
@@ -19,7 +18,7 @@ import { FormsModule } from '@angular/forms';
     HeaderComponent,
     Task2Component,
     Task3Component,
-    Task4Component,
+   
   ],
   imports: [
     BrowserModule,
