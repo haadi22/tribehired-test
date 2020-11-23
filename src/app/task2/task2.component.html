@@ -1,0 +1,103 @@
+<div class="container">
+    <div class="row">
+        <div class="col" >
+            <input [(ngModel)]="inputId" type="text"  name="inputId">
+        </div>
+        <div class="col">
+            <button  style="margin-left: -350px;" (click)="getAllDataById(inputId)" >search</button> 
+        </div>
+       
+    </div>
+    <div class="row" style="padding-top: 20px; padding-left: 10px;">
+
+       
+        <h5>View comments for a post endpoint:</h5>
+    </div>
+    <div class="row" style="margin-top: 10px;">
+       
+        <div class="col">
+            <section>
+                <header class="header">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <div class="row"></div>
+
+                        </div>
+                    </div>
+                </header>
+            </section>
+            <section class="main">
+                <table class="table table-striped table-responsive-md btn-table">
+                    <thead>
+                        <tr style="background-color:gray;">
+                            <!-- <th>#</th> -->
+                            <th>postId</th>
+                            <th>Id</th>
+                            <th>name</th>
+                            <th>email</th>
+                            <th>body</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let monitor of monitors ">
+                            <!-- <th scope="row">{{monitor.id}}</th> -->
+                            <td>{{monitor.postId}}</td>
+                            <td>{{monitor.id}}</td>
+                            <td>{{monitor.name}}</td>
+                            <td>{{monitor.email}}</td>
+                            <td>{{monitor.body}}</td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </div>
+
+    <div class="row" style="padding-top: 30px;">
+        <h5>View individual post endpoint:</h5>
+    </div>
+    <div class="row" style="margin-top: 10px;">
+       
+        <div class="col">
+            <section>
+                <header class="header">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <div class="row"></div>
+
+                        </div>
+                    </div>
+                </header>
+            </section>
+            <section class="main">
+                <table class="table table-striped table-responsive-md btn-table">
+                    <thead>
+                        <tr style="background-color:gray;">
+                            <!-- <th>#</th> -->
+                            <th>userId</th>
+                            <th>Id</th>
+                            <th>title</th>
+                            <th>body</th>
+                           
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- <tr *ngFor="let monitor of monit "> -->
+                            <!-- <th scope="row">{{monitor.id}}</th> -->
+                            <td>{{userId}}</td>
+                            <td>{{Id}}</td>
+                            <td>{{title}}</td>
+                            <td>{{body}}</td>
+                          
+
+                        <!-- </tr> -->
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </div>
+
+    

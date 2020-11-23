@@ -1,0 +1,48 @@
+<div class="container">
+
+    <div class="row" style="padding-top: 20px; padding-left: 10px;">
+
+       
+        <h5>Create a screen to display all the posts</h5>
+    </div>
+    <div class="row">
+        <div class="col">
+            <section>
+                <header class="header">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <div class="row"></div>
+
+                        </div>
+                    </div>
+                </header>
+            </section>
+            <section class="main">
+                <table class="table table-striped table-responsive-md btn-table">
+                    <thead>
+                        <tr style="background-color:gray;">
+                            <!-- <th>#</th> -->
+                            <th>userId</th>
+                            <th>Id</th>
+                            <th>title</th>
+                            <th>body</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let monitor of monitors ">
+                            <!-- <th scope="row">{{monitor.id}}</th> -->
+                            <td>{{monitor.userId}}</td>
+                            <td>{{monitor.id}}</td>
+                            <td>{{monitor.title}}</td>
+                            <td>{{monitor.body}}</td>
+                        
+
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </div>
+
+    
